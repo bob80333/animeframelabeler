@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.181" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1200.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="112.0">
+               <children>
+                  <Label text="Current Image-2:" />
+                  <ImageView fitHeight="112.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <VBox alignment="TOP_CENTER" layoutX="736.0" layoutY="10.0" prefHeight="200.0" prefWidth="112.0">
+               <children>
+                  <Label text="Current Image-1:" />
+                  <ImageView fitHeight="112.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="224.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="224.0" text="Current Image:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="224.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label text="Difference to the right image">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="224.0" fitWidth="224.0" layoutX="10.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <VBox alignment="TOP_CENTER" layoutX="240.0" layoutY="10.0" prefHeight="200.0" prefWidth="112.0">
+               <children>
+                  <Label text="Current Image+1:" />
+                  <ImageView fitHeight="112.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <VBox alignment="TOP_CENTER" layoutX="923.0" layoutY="10.0" prefHeight="200.0" prefWidth="112.0">
+               <children>
+                  <Label text="Current Image+2:" />
+                  <ImageView fitHeight="112.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+   <top>
+      <ButtonBar buttonOrder="" prefHeight="40.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button alignment="CENTER" mnemonicParsing="false" text="Choose Image Directory" />
+            <Button layoutX="1044.0" layoutY="17.0" mnemonicParsing="false" text="Save Json of Processed Frames" />
+            <Button layoutX="996.0" layoutY="17.0" mnemonicParsing="false" text="Load Json of Processed Frames" />
+        </buttons>
+      </ButtonBar>
+   </top>
+   <bottom>
+      <VBox prefHeight="120.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="1200.0" spacing="7.5">
+               <children>
+                  <CheckBox alignment="CENTER" mnemonicParsing="false" text="Nothing Frame" />
+                  <CheckBox mnemonicParsing="false" text="Character Frame" />
+                  <CheckBox layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Other Frame" />
+                  <CheckBox layoutX="182.0" layoutY="10.0" mnemonicParsing="false" text="Camera Frame" />
+                  <Button mnemonicParsing="false" text="Back">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" text="Next">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <CheckBox mnemonicParsing="false" text="Auto NearNothing Frames" />
+                  <Button layoutX="778.0" layoutY="27.0" mnemonicParsing="false" text="Repeat Last 2 Frames">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="1024.0" layoutY="27.0" mnemonicParsing="false" text="Repeat Last 3 Frames" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="1200.0" spacing="10.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="TOP" text="?/?">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>
