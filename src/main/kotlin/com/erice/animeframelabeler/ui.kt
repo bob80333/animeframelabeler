@@ -166,6 +166,7 @@ class LabelerView : View() {
                             controller.back()
                         }
                         controller.backButtonDisabled = disableProperty()
+                        isDisable = false
                     }
 
                     button("Next") {
